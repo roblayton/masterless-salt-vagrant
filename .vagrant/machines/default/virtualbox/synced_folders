@@ -1,0 +1,1 @@
+{"virtualbox":{"/vbnfs":{"guestpath":"/vbnfs","hostpath":"/Users/roblayton/vbnfs","disabled":false},"/srv/salt":{"guestpath":"/srv/salt","hostpath":"/Users/roblayton/vagrants/masterless-salt-vagrant/salt/roots","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/roblayton/vagrants/masterless-salt-vagrant","disabled":false}}}
