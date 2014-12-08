@@ -12,11 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/trusty64"
 
-  # Create a forwarded port mapping which allows access to a specific port
-  # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network "forwarded_port", guest: 22, host: 2223
-
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
@@ -49,7 +44,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Use all the defaults:
   config.vm.provision :salt do |salt|
     
-    salt.minion_config = "salt/minion"
+    salt.minion_config = "salt/configs/minion.conf"
     salt.run_highstate = true
 
      
